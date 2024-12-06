@@ -1,5 +1,5 @@
 {
-  "name": "corex_js",
+  "name": "corex",
   "version": "1.0.0",
   "main": "dist/index.js",
   "bin": "dist/index.js",
@@ -23,7 +23,6 @@
     "targets": [
       "node14-linux-x64",
       "node14-linux-arm64"
-
     ],
     "outputPath": "dist"
   }

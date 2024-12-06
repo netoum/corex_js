@@ -1,8 +1,8 @@
 {
   "name": "corex",
   "version": "1.0.0",
-  "main": "standalone.js",
-  "bin": "standalone.js",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
   "scripts": {
     "build:hooks": "npx tsup hooks/index.ts --format cjs,esm --dts --out-dir dist/",
     "build:pkg": "pkg . --compress Brotli --no-bytecode --public-packages \"*\" --public"

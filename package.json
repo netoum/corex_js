@@ -1,11 +1,11 @@
 {
   "name": "corex",
   "version": "1.0.0",
-  "main": "dist/index.js",
-  "bin": "dist/index.js",
+  "main": "standalone.js",
+  "bin": "standalone.js",
   "scripts": {
     "build:hooks": "npx tsup hooks/index.ts --format cjs,esm --dts --out-dir dist/",
-    "build:pkg": "pkg . --debug --compress Brotli --no-bytecode --public-packages \"*\" --public"
+    "build:pkg": "pkg . --compress Brotli --no-bytecode --public-packages \"*\" --public"
   },
   "author": "",
   "license": "ISC",
@@ -22,7 +22,8 @@
   "pkg": {
     "targets": [
       "node14-linux-x64",
-      "node14-linux-arm64"
+      "node14-linux-arm64",
+      "node14-win-x64"
     ],
     "outputPath": "dist"
   }
